@@ -1,1 +1,19 @@
-seats
+    const newElement = document.createElement('tr');
+
+    const td1 = document.createElement('td');
+    td1.id = 'nameSeat';
+    td1.textContent = buttonId;
+
+    const td2 = document.createElement('td');
+    td2.id = 'seatClass';
+    td2.textContent = 'Economoy';
+
+    const td3 = document.createElement('td');
+    td3.id = 'seatPrice';
+    td3.textContent = '550';
+
+    newElement.appendChild(td1);
+    newElement.appendChild(td2);
+    newElement.appendChild(td3);
+
+    document.getElementById('myTable').appendChild(newElement);
