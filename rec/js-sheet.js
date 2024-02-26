@@ -64,18 +64,18 @@ function coupons(coupon) {
 
 
 document.getElementById("input").addEventListener("keyup", function (event) {
-    const newEvent = event.target.value.toLowerCase(); // Convert to lowercase for case-insensitive matching
+    const newEvent = event.target.value.toLowerCase();
     console.log(newEvent);
 
     const couponCodes = ["free", "new15", "couple 20"];
     const Button = document.getElementById("inputButton");
+    const totalSeats = parseInt(document.getElementById("totalSeats"));
 
-    // Check if the input includes any of the coupon codes
-    if (couponCodes.some(code => newEvent.includes(code))) {
-        // Enable the button
+    if (couponCodes.some(code => newEvent.includes(code)) && totalSeats != 0) {
+
         Button.disabled = false;
     } else {
-        // Disable the button
+
         Button.disabled = true;
     }
 });
@@ -175,12 +175,12 @@ function inputFil() {
     const nameInput = document.getElementById("Name").value;
     const phoneInput = document.getElementById("phNu").value;
     const nextButton = document.getElementById("nextButton");
+    const totalSeats = parseInt(document.getElementById("totalSeats"));
 
-    if (nameInput.trim() !== "" && phoneInput.trim() !== "") {
-        // Enable the button if both Name and Phone Number are not empty
+
+    if (nameInput.trim() !== "" && phoneInput.trim() !== "" && totalSeats != 0) {
         nextButton.disabled = false;
     } else {
-        // Disable the button if either Name or Phone Number is empty
         nextButton.disabled = true;
     }
 }
