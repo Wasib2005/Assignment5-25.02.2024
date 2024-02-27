@@ -24,12 +24,12 @@ function addInTable(buttonId) {
     const table = document.getElementById('myTable');
     const lastChild = table.lastElementChild;
 
-    // Insert the new row before the last child
+
     table.insertBefore(newElement, lastChild);
 }
 
 function removeInTable(buttonId) {
-    const rowToRemove = document.getElementById(buttonId + '1'); // Assuming your row id is buttonId + 1
+    const rowToRemove = document.getElementById(buttonId + '1');
 
     if (rowToRemove) {
         rowToRemove.remove();
@@ -185,3 +185,11 @@ function inputFil() {
     }
 }
 
+function seeMore(){
+    freeClassList=document.getElementById("free").classList
+
+    
+    freeClassList.remove("hidden")
+    document.getElementById("seeMore").innerText="See Less Offers"
+
+}

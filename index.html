@@ -73,14 +73,23 @@
                 <h1 class="text-4xl font-bold pt-28">Best offers for you</h1>
             </div>
             <!-- Coupon -->
-            <div class="flex gap-3 pt-9">
-                <div onclick="coupon('NEW15')" class="hover:bg-slate-400"><img src="rec/images/Coupon-1.png" alt="">
+            <div class="flex flex-col justify-center items-center gap-3">
+                <div class="flex gap-3 pt-9">
+                    <div onclick="coupon('NEW15')" class="hover:bg-slate-400"><img src="rec/images/Coupon-1.png" alt="">
+                    </div>
+                    <div onclick="coupon('Couple 20')" class="hover:bg-slate-400"><img src="rec/images/Coupon-2.png"
+                            alt="">
+                    </div>
                 </div>
-                <div onclick="coupon('Couple 20')" class="hover:bg-slate-400"><img src="rec/images/Coupon-2.png" alt="">
+                <div class="">
+                    <div id="free" onclick="coupon('Free')" class="hidden hover:bg-slate-400"><img src="rec/images/Free.png" alt="">
+                    </div>
                 </div>
             </div>
-            <a href="rec/error.html"><button class="btn btn-outline btn-success pt-5 pb-5 pl-8 pr-8 mt-10">See All
-                    Offers</button></a>
+
+
+            <button id="seeMore" onclick="seeMore()" class="btn btn-outline btn-success pt-5 pb-5 pl-8 pr-8 mt-10">See All
+                    Offers</button>
         </section>
 
 
@@ -427,21 +436,29 @@
                                 <form action="">
                                     <div class="text-left">
                                         <h1>Passenger Name*</h1>
-                                        <input type="text" name="" id="Name" oninput="inputFil()"  class="p-3 rounded-2xl border-solid w-full" placeholder="Enter your name">
+                                        <input type="text" name="" id="Name" oninput="inputFil()"
+                                            class="p-3 rounded-2xl border-solid w-full" placeholder="Enter your name">
                                     </div>
                                     <div class="text-left">
                                         <h1>Phone Number*</h1>
-                                        <input type="tel" name="" id="phNu" oninput="inputFil()"  class="p-3 rounded-2xl border-solid w-full" placeholder="Enter your phone number">
+                                        <input type="tel" name="" id="phNu" oninput="inputFil()"
+                                            class="p-3 rounded-2xl border-solid w-full"
+                                            placeholder="Enter your phone number">
                                     </div>
                                     <div class="text-left">
                                         <h1>Email ID</h1>
-                                        <input type="email" name="" id="" oninput="inputFil()" class="p-3 rounded-2xl border-solid w-full" placeholder="Enter your email id">
+                                        <input type="email" name="" id="" oninput="inputFil()"
+                                            class="p-3 rounded-2xl border-solid w-full"
+                                            placeholder="Enter your email id">
                                     </div>
-                                    <a href="rec/Conf.html" class="w-full"><button id="nextButton" class="btn btn-success w-full text-white ">Next</a></button>
+                                    <a href="rec/Conf.html" class="w-full"><button id="nextButton"
+                                            class="btn btn-success w-full text-white ">Next</a></button>
                                 </form>
                                 <div class="flex justify-between">
-                                    <div><a class="btn btn-link" href="rec/error.html"><small>Terms and Conditions</small></a></div>
-                                    <div><a class="btn btn-link" href="rec/error.html"><small>Cancellation Policy</small></a></div>
+                                    <div><a class="btn btn-link" href="rec/error.html"><small>Terms and
+                                                Conditions</small></a></div>
+                                    <div><a class="btn btn-link" href="rec/error.html"><small>Cancellation
+                                                Policy</small></a></div>
                                 </div>
                             </div>
                         </div>
@@ -493,13 +510,19 @@
                 <p>&copy; All rights reserved, P-Ticket Services Limited. 2024</p>
             </div>
             <div class="flex gap-7">
-                <a href="rec/error.html"><p class="text-white">Terms & conditions</p></a>
-                <a href="rec/error.html"><p class="text-white">Return & refund policy</p></a>
-                <a href="rec/error.html"><p class="text-white">Privacy policy</p></a>
+                <a href="rec/error.html">
+                    <p class="text-white">Terms & conditions</p>
+                </a>
+                <a href="rec/error.html">
+                    <p class="text-white">Return & refund policy</p>
+                </a>
+                <a href="rec/error.html">
+                    <p class="text-white">Privacy policy</p>
+                </a>
             </div>
         </div>
     </footer>
-    
+
 
 
     <script src="https://cdn.tailwindcss.com"></script>
